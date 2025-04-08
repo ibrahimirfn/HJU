@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const footerLinks = {
@@ -37,13 +38,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-4">
-            <a href="/">
+            <Link to="/">
               <img
                 src={`${import.meta.env.BASE_URL}images/logo.png`}
                 alt="Logo"
                 className="w-32"
               />
-            </a>
+            </Link>
             <p className="text-sm opacity-90">
               Jl. Kali Pepe III No. 58, Pudakpayung, Banyumanik, 
               Kota Semarang, Jawa Tengah
@@ -55,12 +56,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.information.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href} 
+                  <Link 
+                    to={link.href} 
                     className="text-sm opacity-90 hover:opacity-100 hover:pl-1 transition-all duration-300"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -71,12 +72,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.product.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href} 
+                  <Link 
+                    to={link.href} 
                     className="text-sm opacity-90 hover:opacity-100 hover:pl-1 transition-all duration-300"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -87,12 +88,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.about.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href} 
+                  <Link 
+                    to={link.href} 
                     className="text-sm opacity-90 hover:opacity-100 hover:pl-1 transition-all duration-300"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

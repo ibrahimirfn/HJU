@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -68,8 +69,8 @@ const Hero = () => {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <a
-            href="#about"
+          <Link
+            to="/#about"
             className="inline-block relative group border-2 border-white px-8 py-3 rounded-full text-white transition-all duration-300 overflow-hidden"
             onMouseEnter={() => setHoverButton(true)}
             onMouseLeave={() => setHoverButton(false)}
@@ -88,7 +89,7 @@ const Hero = () => {
             <span className={`ml-2 relative inline-block transition-all duration-300 ${
               hoverButton ? 'translate-x-1 opacity-100' : 'opacity-0'
             }`}>→</span>
-          </a>
+          </Link>
         </div>
       </div>
 
