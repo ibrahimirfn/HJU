@@ -323,7 +323,7 @@ function Product() {
       <section
         className="relative py-24 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/banner4.jpg')",
+          backgroundImage: `url(${import.meta.env.BASE_URL}images/banner4.jpg)`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/50" />

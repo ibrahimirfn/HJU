@@ -113,7 +113,7 @@ const AboutUs = () => {
       <section
         className="relative py-24 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/banner2.png')",
+          backgroundImage: `url(${import.meta.env.BASE_URL}images/banner2.png)`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/50" />

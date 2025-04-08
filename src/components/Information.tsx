@@ -338,7 +338,7 @@ const Information = () => {
       <section
         className="relative py-24 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/farmer.png')",
+          backgroundImage: `url(${import.meta.env.BASE_URL}images/farmer.png)`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/50" />
