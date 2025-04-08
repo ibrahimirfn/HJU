@@ -104,7 +104,7 @@ const About = () => {
               
               {/* Main image */}
               <img
-                src="/images/farmer.png"
+                src={`${import.meta.env.BASE_URL}images/farmer.png`}
                 alt="Petani di Greenhouse"
                 className="relative z-10 rounded-lg shadow-xl hover:-translate-y-2 hover:rotate-1 transition-all duration-500 w-full object-cover"
               />

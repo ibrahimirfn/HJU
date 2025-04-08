@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="space-y-4">
             <a href="/">
               <img
-                src="/images/logo.png"
+                src={`${import.meta.env.BASE_URL}images/logo.png`}
                 alt="Logo"
                 className="w-32"
               />

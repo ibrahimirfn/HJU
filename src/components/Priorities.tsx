@@ -25,19 +25,19 @@ const Priorities = () => {
     {
       title: "Produk Berkualitas Tinggi",
       description: "Kami berkomitmen untuk menghadirkan produk-produk terbaik yang memenuhi bahkan melampaui ekspektasi pelanggan kami. Dengan standar kualitas yang ketat dan inovasi berkelanjutan, setiap produk yang kami hasilkan adalah perwujudan dari dedikasi kami terhadap keunggulan.",
-      image: "/images/product-quality.png",
+      image: `${import.meta.env.BASE_URL}images/product-quality.png`,
       icon: "✨"
     },
     {
       title: "Dukungan Layanan Purna Jual",
       description: "Kepuasan pelanggan tidak berhenti pada saat pembelian. Kami menyediakan layanan purna jual yang komprehensif dan responsif, memastikan bahwa setiap pelanggan mendapatkan dukungan maksimal sepanjang penggunaan produk kami.",
-      image: "/images/customer-support.png",
+      image: `${import.meta.env.BASE_URL}images/customer-support.png`,
       icon: "🛠️"
     },
     {
       title: "Mendorong Pertanian Berkelanjutan",
       description: "Sebagai bagian dari tanggung jawab kami terhadap lingkungan dan masa depan, kami aktif mempromosikan dan mendukung praktik pertanian berkelanjutan. Kami berupaya menciptakan keseimbangan antara produktivitas pertanian dan pelestarian sumber daya alam.",
-      image: "/images/sustainable-farming.png",
+      image: `${import.meta.env.BASE_URL}images/sustainable-farming.png`,
       icon: "🌱"
     }
   ];

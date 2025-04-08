@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center"> {/* Replace a href="#" with Link */}
           <img 
-            src="/images/logo.png" 
+            src={`${import.meta.env.BASE_URL}images/logo.png`} 
             alt="Logo" 
             className={`transition-all duration-300 ${isSticky ? 'w-24' : 'w-32'}`}
           />

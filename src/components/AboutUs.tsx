@@ -156,7 +156,7 @@ const AboutUs = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <img 
-                src="/images/Ghomsony.png" 
+                src={`${import.meta.env.BASE_URL}images/Ghomsony.png`} 
                 alt="Ir. Ghomsony" 
                 className="relative rounded-lg shadow-lg w-full max-w-xs"
               />
@@ -171,7 +171,7 @@ const AboutUs = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 rounded-xl overflow-hidden shadow-xl transform hover:rotate-1 transition-transform duration-500">
               <img
-                src="/images/hju.jpg"
+                src={`${import.meta.env.BASE_URL}images/hju.jpg`}
                 alt="Kantor PT. Hibrida Jaya Utama"
                 className="w-full hover:scale-105 transition-transform duration-700"
               />
@@ -513,7 +513,7 @@ const AboutUs = () => {
             <div className="bg-gray-200 rounded-xl overflow-hidden h-full shadow-xl group">
               <div className="w-full h-full flex items-center justify-center relative overflow-hidden">
                 <img 
-                  src="/images/loc.png" 
+                  src={`${import.meta.env.BASE_URL}images/loc.png`} 
                   alt="Lokasi PT. Hibrida Jaya Utama" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
