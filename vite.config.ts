@@ -4,21 +4,8 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/HJU/',  // Replace with your repository name
+  base: '/HJU/',  // Required for GitHub Pages
   optimizeDeps: {
-    include: ['react-router-dom'],
-  },
-  build: {
-    commonjsOptions: {
-      include: [/node_modules/],
-    },
-    rollupOptions: {
-      external: [],
-      output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-        },
-      },
-    },
+    exclude: ['lucide-react'],
   },
 });
