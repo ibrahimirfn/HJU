@@ -6,6 +6,12 @@ export default defineConfig({
   plugins: [react()],
   base: '/HJU/',  // Replace with your repository name
   optimizeDeps: {
+    include: ['react-router-dom'],
     exclude: ['lucide-react'],
+  },
+  build: {
+    rollupOptions: {
+      external: [],
+    },
   },
 });
