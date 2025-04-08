@@ -7,11 +7,18 @@ export default defineConfig({
   base: '/HJU/',  // Replace with your repository name
   optimizeDeps: {
     include: ['react-router-dom'],
-    exclude: ['lucide-react'],
   },
   build: {
+    commonjsOptions: {
+      include: [/node_modules/],
+    },
     rollupOptions: {
       external: [],
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
     },
   },
 });
