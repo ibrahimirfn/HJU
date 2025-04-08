@@ -34,7 +34,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 ease-out scale-110"
         style={{
-          backgroundImage: "url('/images/banner.png')",
+          backgroundImage: `url(${import.meta.env.BASE_URL}images/banner.png)`,
           transform: `translate(${parallaxX}px, ${parallaxY}px) scale(1.1)`,
         }}
       >
