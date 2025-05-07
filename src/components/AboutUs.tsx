@@ -1,5 +1,6 @@
 import { ArrowRight, Award, Calendar, MapPin, User, Users, ChevronRight, Sparkles, Zap, Flame, Heart, Star, TrendingUp } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Define the types for TimelineItem props
 interface TimelineItemProps {
@@ -543,12 +544,12 @@ const AboutUs = () => {
           <p className="text-xl max-w-2xl mx-auto mb-8">
             Mau Bergabung Dengan Kami? 🌱🚀
           </p>
-          <a 
-            href="kontak" 
+          <Link 
+            to="/kontak" 
             className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
           >
             Kontak Kami!
-          </a>
+          </Link>
         </div>
       </section>
     </div>

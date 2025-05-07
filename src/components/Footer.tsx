@@ -20,9 +20,9 @@ const Footer = () => {
     ],
     about: [
       { name: 'Profil Perusahaan', href: '/tentang-kami/' },
-      { name: 'Visi Misi', href: '/tentang-kami/' },
-      { name: 'Sejarah', href: '/tentang-kami/sejarah' },
       { name: 'Profil Direksi', href: '/tentang-kami/' },
+      { name: 'Visi Misi', href: '/tentang-kami/' },
+      { name: 'Sejarah', href: '/tentang-kami/' },
       { name: 'Kontak Kami', href: '/tentang-kami/' }
     ]
   };
